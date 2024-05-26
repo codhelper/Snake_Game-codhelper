@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        
+        canvas{
+            background-color:black;
+            border: 20px solid green;
+        }
+
+        .shift{
+            height: 50px;
+            width : 280px;
+            color: rebeccapurple;
+            /* border: 2px solid gold; */
+            font-size: 3rem;
+        }
+        h1{
+            color: blueviolet;
+            font-size: 3rem;
+        }
+        .score , label{
+            font-size: 2rem;
+            /* height: 40px;
+            width: 90px; */
+            /* border: 3px solid black; */
+            display: inline;
+        }
+        .button{
+            height: 200px;
+            width: 300px;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            /* align-items: center; */
+        }
+        .left-right{
+            display: flex;
+            /* flex-direction: column; */ 
+             justify-content: space-between;
+            align-items: center;
+        }
+        input[type='button']{
+            height: 50px;
+            width: 100px;
+            color: black;
+            background-color: greenyellow;
+            font-size: 2rem;
+            margin: 8px;
+        }
+        main{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        input[type='button']:active{
+            border: 8px solid black;
+
+        }
+        .gameOver{
+            position: absolute;
+            top: 30%;
+            left: 25%;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+  <center>  <h1>Snake Game</h1></center>
+
+    <center>
+        <label for="score">Score  </label>
+        <div class="score">0</div></center>
+    <center><div class="shift"></div></center>
+    <main>
+    <canvas height="800px"   width="1800px">
+
+    </canvas>
+    <div class="button">
+        <div>
+        <center><input type="button" value="Up" id="btn"></center>
+        </div>
+        <div class="left-right">
+            <input type="button" value="Left" id="btn">
+            <input type="button" value="Right" id="btn">
+        </div>
+        <div><center><input type="button" value="Down" id="btn"> </center>   </div></div>
+    </main>
+
+    <div class="gameOver"><img src="https://c4.wallpaperflare.com/wallpaper/327/229/161/digital-art-game-over-minimalism-text-wallpaper-preview.jpg" alt=""></div>
+    <script src="index2.js">
+
+    </script>
+</body>
+</html>
